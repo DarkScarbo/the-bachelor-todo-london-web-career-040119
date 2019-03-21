@@ -48,7 +48,7 @@ def get_average_age_for_season(data, season)
   average = 0
   data.each do |episode, person|
     if episode == season
-      person.each do |details, info|
+      person.each do |details|
         ages << details["age"]
       end
     end
